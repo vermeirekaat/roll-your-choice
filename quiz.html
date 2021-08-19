@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DICE - Join</title>
+</head>
+
+<body>
+
+    <header class="navigation">
+        <a href="index.html" class="navigation__bar">
+            <h1 class="navigation__title title--hidden">Dice</h1>
+            <img class="navigation__image" src="assets/images/SVG/dice-typo.svg" alt="dice-typo" height="70">
+        </a>
+        <nav class="navigation__button">
+            <a class="navigation__subject" href="index.html">Home</a>
+            <a class="navigation__subject" href="about.html">About</a>
+            <a class="navigation__subject navigation__subject--active" href="quiz.html">Join</a>
+        </nav>
+    </header>
+
+    <main class="content">
+
+        <article class="information">
+            <div class="illustration">
+                <h2 class="information__subtitle"><span>Make</span> The <span>Decision</span></h2>
+                <div class="task">
+                    <p class="task__question">Can you make a day-to-day decision within 10 seconds?</p>
+                    <p class="task__question"> Or should you let the dice make a choice for you?</p>
+                </div>
+                
+                <img class="illustration--brains" src="assets/images/dices-random.gif" alt="illustration-brains" height="150">
+            </div>  
+        </article>
+
+        <div class="countdown">
+            <p class="countdown__number">10</p>
+        </div>
+        
+
+        <form method="get" action="quiz.html" class="form-general form-register">
+            <fieldset class="form-general__question">
+                <legend class="form__subtitle"> What are you going to have for breakfast?</legend>
+                <div class="form-general__field">
+                    <label class="checkbox-radio__field"><input class="breakfast" type="radio" name="breakfast" value="1"> <span>&#9856;</span> nothing</label>
+                    <label class="checkbox-radio__field"><input class="breakfast" type="radio" name="breakfast" value="2"> <span>&#9857;</span> only coffee</label>
+                    <label class="checkbox-radio__field"><input class="breakfast" type="radio" name="breakfast" value="3"> <span>&#9858;</span> yoghurt with muesli</label>
+                    <label class="checkbox-radio__field"><input class="breakfast" type="radio" name="breakfast" value="4"> <span>&#9859;</span> loaf of bread with Nutella</label>
+                    <label class="checkbox-radio__field"><input class="breakfast" type="radio" name="breakfast" value="5"> <span>&#9860;</span> fresh pastry from the bakery</label>
+                    <label class="checkbox-radio__field"><input class="breakfast" type="radio" name="breakfast" value="6"> <span>&#9861;</span> piece of fruit</label>
+                </div>
+        </fieldset>
+        <fieldset class="form-general__question">
+            <legend class="form__subtitle"> What kind of sport are you going to do today?</legend>
+            <div class="form-general__field">
+                <label class="checkbox-radio__field"><input class="sport" type="radio" name="sport" value="1"><span>&#9856;</span> running</label>
+                <label class="checkbox-radio__field"><input class="sport" type="radio" name="sport" value="2"> <span>&#9857;</span> go to the gym</label>
+                <label class="checkbox-radio__field"><input class="sport" type="radio" name="sport" value="3"> <span>&#9858;</span> yoga</label>
+                <label class="checkbox-radio__field"><input class="sport" type="radio" name="sport" value="4"> <span>&#9859;</span> dancing</label>
+                <label class="checkbox-radio__field"><input class="sport" type="radio" name="sport" value="5"> <span>&#9860;</span> jump rope</label>
+                <label class="checkbox-radio__field"><input class="sport" type="radio" name="sport" value="6"> <span>&#9861;</span> nothing</label>
+            </div>
+        </fieldset>
+             <div class="form-general__submit">
+                <input type="submit" value="Decided" class="form-general__submit-button">
+            </div>
+        </form>
+
+        <div class="information test__failed part--hidden">
+        </div>
+
+        <div class="information test__succeeded part--hidden">
+        </div>
+        <div class="email__succes"></div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__title">Roll your <span>choice</span></p>
+    </footer>
+    
+    <script src="js/scipt.js"></script>
+</body>
+</html>
